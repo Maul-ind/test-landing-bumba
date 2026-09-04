@@ -1,0 +1,661 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bumba Beans</title>
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/img/logo.png" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg shadow-sm fixed-top custom-navbar">
+      <div class="container custom-navbar-container">
+        <a class="navbar-brand custom-navbar-brand" href="#"
+          ><img src="./assets/img/logo.png" alt="" /><span>
+            Bumba Beans</span
+          ></a
+        >
+
+        <!-- link biasa, cuma tampil di desktop (lg ke atas) -->
+        <ul
+          class="navbar-nav d-none d-md-flex flex-row align-items-center gap-4 ms-auto me-4"
+        >
+          <li class="nav-item">
+            <a class="nav-link custom-nav-link" href="./index.html">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link custom-nav-link active"
+              href="./index.html#produk"
+              >Produk</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-nav-link" href="./index.html#tentang"
+              >Tentang</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-nav-link" href="./index.html#kontak"
+              >Kontak</a
+            >
+          </li>
+        </ul>
+
+        <!-- tombol pesan tetap kelihatan di desktop -->
+        <!-- <a
+          href="https://wa.me/6282133355755"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="custom-nav-btn d-none d-md-inline-block"
+        >
+          <i class="fa-brands fa-whatsapp"></i>
+          Pesan Sekarang
+        </a> -->
+
+        <!-- toggle buka offcanvas, muncul cuma di layar kecil (mobile) -->
+        <button
+          class="custom-toggle-btn d-md-none ms-auto"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#sidebarMenu"
+        >
+          &#9776;
+        </button>
+      </div>
+    </nav>
+
+    <!-- OFFCANVAS dari kanan -->
+    <div
+      class="offcanvas offcanvas-end custom-offcanvas"
+      tabindex="-1"
+      id="sidebarMenu"
+    >
+      <div class="offcanvas-header custom-offcanvas-header justify-content-end">
+        <button class="custom-close-btn" data-bs-dismiss="offcanvas">
+          &times;
+        </button>
+      </div>
+      <div class="offcanvas-body custom-offcanvas-body">
+        <a class="nav-link custom-offcanvas-link" href="./index.html"
+          >Beranda</a
+        >
+        <a
+          class="nav-link custom-offcanvas-link active"
+          href="./index.html#produk"
+          >Produk</a
+        >
+        <a class="nav-link custom-offcanvas-link" href="./index.html#tentang"
+          >Tentang</a
+        >
+        <a class="nav-link custom-offcanvas-link" href="./index.html#kontak"
+          >Kontak</a
+        >
+        <!-- <a
+          href="https://wa.me/6282133355755"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="custom-nav-btn d-md-inline-block"
+        >
+          <i class="fa-brands fa-whatsapp"></i>
+          Pesan Sekarang
+        </a> -->
+      </div>
+    </div>
+
+    <!-- INFO PRODUK -->
+    <section
+      class="custom-section-detail-info custom-detail-info-top"
+      id="produk-detail"
+    >
+      <div class="container">
+        <div class="row g-4 g-lg-5">
+          <!-- GAMBAR PRODUK -->
+          <div class="col-12 col-lg-5">
+            <img
+              src="./assets/img/arabica.png"
+              alt="Biji Kopi Arabica"
+              class="custom-detail-img"
+              data-animate="fade-up"
+              data-delay="0"
+            />
+          </div>
+
+          <!-- INFO / PILIHAN -->
+          <div class="col-12 col-lg-7">
+            <h1
+              class="custom-detail-title"
+              data-animate="fade-up"
+              data-delay="300"
+            >
+              Arabica
+            </h1>
+            <p
+              class="custom-detail-paragraph"
+              data-animate="fade-up"
+              data-delay="350"
+            >
+              Arabica Bumba Beans tumbuh di kawasan dataran tinggi Sulawesi
+              Selatan, tepatnya di lereng Bawakaraeng dengan ketinggian sekitar
+              1.200–1.600 MDPL. Kondisi tanah dan udara pegunungan memberikan
+              lingkungan yang mendukung pertumbuhan kopi dengan karakter yang
+              khas.
+            </p>
+
+            <h6
+              class="custom-choice-label-title"
+              data-animate="fade-up"
+              data-delay="200"
+            >
+              Bentuk Tersedia
+            </h6>
+            <div class="custom-bentuk-list mb-4">
+              <div
+                class="custom-bentuk-item"
+                data-animate="slide-right"
+                data-delay="300"
+              >
+                <span class="custom-bentuk-name">Green Bean</span>
+                <p class="custom-bentuk-desc">
+                  Biji kopi mentah yang belum disangrai, cocok buat kamu yang
+                  mau menyangrai sendiri di rumah.
+                </p>
+              </div>
+              <div
+                class="custom-bentuk-item"
+                data-animate="slide-left"
+                data-delay="300"
+              >
+                <span class="custom-bentuk-name">Giling Sedang</span>
+                <p class="custom-bentuk-desc">
+                  Tekstur bubuk medium, pas buat metode seduh manual seperti V60
+                  atau drip.
+                </p>
+              </div>
+              <div
+                class="custom-bentuk-item"
+                data-animate="slide-right"
+                data-delay="300"
+              >
+                <span class="custom-bentuk-name">Giling Halus</span>
+                <p class="custom-bentuk-desc">
+                  Tekstur bubuk halus, cocok buat mesin espresso.
+                </p>
+              </div>
+            </div>
+
+            <h6
+              class="custom-choice-label-title"
+              data-animate="fade-up"
+              data-delay="200"
+            >
+              Ukuran Tersedia
+            </h6>
+            <div class="gap-2 mb-4 custom-row-size">
+              <span
+                class="custom-size-tag"
+                data-animate="fade-up"
+                data-delay="200"
+                >100 g</span
+              >
+              <span
+                class="custom-size-tag"
+                data-animate="fade-up"
+                data-delay="250"
+                >260 g</span
+              >
+              <span
+                class="custom-size-tag"
+                data-animate="fade-up"
+                data-delay="300"
+                >500 g</span
+              >
+              <span
+                class="custom-size-tag"
+                data-animate="fade-up"
+                data-delay="350"
+                >1 kg</span
+              >
+            </div>
+
+            <div
+              class="wrapper-btn-whatsapp"
+              data-animate="fade-up"
+              data-delay="100"
+            >
+              <a
+                href="https://wa.me/6282133355755"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="custom-btn-product custom-btn-pesan-detail w-100"
+              >
+                <i class="fa-brands fa-whatsapp"></i> Pesan Via Whatsapp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TENTANG KOPI -->
+    <section class="custom-section-detail-about">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h4
+              class="custom-detail-title"
+              data-animate="fade-up"
+              data-delay="200"
+            >
+              Tentang Kopi
+            </h4>
+
+            <div class="row">
+              <div
+                class="col-12 col-md-6"
+                data-animate="slide-left"
+                data-delay="200"
+              >
+                <div class="custom-detail-item">
+                  <div class="custom-detail-label">Origin</div>
+                  <div class="custom-detail-value">
+                    Bulukumba Barat, Sulawesi Selatan
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-12 col-md-6"
+                data-animate="slide-right"
+                data-delay="250"
+              >
+                <div class="custom-detail-item">
+                  <div class="custom-detail-label">Terroir</div>
+                  <div class="custom-detail-value">Lereng Bawakaraeng</div>
+                </div>
+              </div>
+              <div
+                class="col-12 col-md-6"
+                data-animate="slide-left"
+                data-delay="300"
+              >
+                <div class="custom-detail-item">
+                  <div class="custom-detail-label">Altitude</div>
+                  <div class="custom-detail-value">±1.200–1.600 MDPL</div>
+                </div>
+              </div>
+              <div
+                class="col-12 col-md-6"
+                data-animate="slide-right"
+                data-delay="350"
+              >
+                <div class="custom-detail-item">
+                  <div class="custom-detail-label">Varietas</div>
+                  <div class="custom-detail-value">Arabica</div>
+                </div>
+              </div>
+              <div
+                class="col-12 col-md-6"
+                data-animate="slide-left"
+                data-delay="400"
+              >
+                <div class="custom-detail-item">
+                  <div class="custom-detail-label">Roast Level</div>
+                  <div class="custom-detail-value">Medium To Dark Roasted</div>
+                </div>
+              </div>
+              <div
+                class="col-12 col-md-6"
+                data-animate="slide-right"
+                data-delay="450"
+              >
+                <div class="custom-detail-item">
+                  <div class="custom-detail-label">Harvest Method</div>
+                  <div class="custom-detail-value">
+                    100% Hand-Picked (Red Cherry Only)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROSES PENGOLAHAN -->
+    <section class="custom-section-detail-process">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h4
+              class="custom-detail-title"
+              data-animate="fade-up"
+              data-delay="200"
+            >
+              Jenis-Jenis Proses Pengolahan
+            </h4>
+            <p
+              class="custom-detail-paragraph mb-4"
+              data-animate="fade-up"
+              data-delay="250"
+            >
+              Setiap biji kopi diproses dengan metode yang dipilih untuk menjaga
+              karakter dan cita rasanya.
+            </p>
+
+            <div class="row g-4">
+              <div
+                class="col-12 col-sm-6 col-lg-3"
+                data-animate="fade-up"
+                data-delay="100"
+              >
+                <div
+                  class="custom-process-card"
+                  role="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalNatural"
+                >
+                  <div class="custom-process-icon">1</div>
+                  <h5 class="custom-process-title">Natural (Dry Process)</h5>
+                  <p class="custom-process-desc">
+                    Buah kopi dikeringkan bersama kulit dan buahnya untuk
+                    mempertahankan karakter rasa yang alami dan manis.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="col-12 col-sm-6 col-lg-3"
+                data-animate="fade-up"
+                data-delay="200"
+              >
+                <div
+                  class="custom-process-card"
+                  role="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalWashed"
+                >
+                  <div class="custom-process-icon">2</div>
+                  <h5 class="custom-process-title">Washed</h5>
+                  <p class="custom-process-desc">
+                    Kulit dan daging buah dikupas sebelum pengeringan,
+                    menghasilkan rasa yang lebih bersih dan cerah.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="col-12 col-sm-6 col-lg-3"
+                data-animate="fade-up"
+                data-delay="300"
+              >
+                <div
+                  class="custom-process-card"
+                  role="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalHoney"
+                >
+                  <div class="custom-process-icon">3</div>
+                  <h5 class="custom-process-title">Honey Process</h5>
+                  <p class="custom-process-desc">
+                    Sebagian lendir buah dipertahankan saat pengeringan untuk
+                    memberikan karakter rasa yang manis.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="col-12 col-sm-6 col-lg-3"
+                data-animate="fade-up"
+                data-delay="400"
+              >
+                <div
+                  class="custom-process-card"
+                  role="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalFermentasi"
+                >
+                  <div class="custom-process-icon">4</div>
+                  <h5 class="custom-process-title">Fermentasi</h5>
+                  <p class="custom-process-desc">
+                    Biji kopi melalui proses fermentasi terkontrol untuk
+                    membentuk karakter rasa yang lebih kompleks.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODAL: NATURAL -->
+    <div
+      class="modal fade custom-process-modal"
+      id="modalNatural"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="d-flex align-items-center gap-3">
+              <div class="custom-process-icon custom-modal-icon">1</div>
+              <h5 class="modal-title">Natural (Dry Process)</h5>
+            </div>
+            <button
+              type="button"
+              class="btn-close custom-btn-close-process"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="custom-modal-desc">
+              Biji kopi ceri dikeringkan utuh bersama kulit dan daging buahnya
+              selama 2–4 minggu di bawah sinar matahari. Selama proses ini, gula
+              alami dari buah meresap ke dalam biji, menghasilkan cita rasa yang
+              manis dan kompleks.
+            </p>
+            <h6 class="custom-modal-subtitle">Karakteristik Rasa</h6>
+            <ul class="custom-modal-list">
+              <li>Body tebal dan creamy</li>
+              <li>Rasa manis dengan sentuhan fruity</li>
+              <li>Tingkat keasaman rendah</li>
+            </ul>
+            <div class="custom-modal-tag">
+              Cocok untuk: Espresso & seduhan dengan body kuat
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL: WASHED -->
+    <div
+      class="modal fade custom-process-modal"
+      id="modalWashed"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="d-flex align-items-center gap-3">
+              <div class="custom-process-icon custom-modal-icon">2</div>
+              <h5 class="modal-title">Washed</h5>
+            </div>
+            <button
+              type="button"
+              class="btn-close custom-btn-close-process"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="custom-modal-desc">
+              Kulit dan daging buah kopi dikupas terlebih dahulu sebelum biji
+              dikeringkan, biasanya menggunakan bantuan air untuk memisahkan
+              lapisan lendirnya. Proses ini menghilangkan rasa manis dari buah
+              sehingga karakter asli biji kopi lebih terasa.
+            </p>
+            <h6 class="custom-modal-subtitle">Karakteristik Rasa</h6>
+            <ul class="custom-modal-list">
+              <li>Rasa bersih dan cerah</li>
+              <li>Keasaman lebih menonjol</li>
+              <li>Body lebih ringan</li>
+            </ul>
+            <div class="custom-modal-tag">
+              Cocok untuk: Manual brew (V60, drip)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL: HONEY -->
+    <div
+      class="modal fade custom-process-modal"
+      id="modalHoney"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="d-flex align-items-center gap-3">
+              <div class="custom-process-icon custom-modal-icon">3</div>
+              <h5 class="modal-title">Honey Process</h5>
+            </div>
+            <button
+              type="button"
+              class="btn-close custom-btn-close-process"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="custom-modal-desc">
+              Kulit buah dikupas seperti proses Washed, tapi sebagian lendir
+              (mucilage) sengaja dipertahankan menempel di biji selama
+              pengeringan. Semakin banyak lendir yang disisakan, semakin manis
+              dan kompleks rasa yang dihasilkan.
+            </p>
+            <h6 class="custom-modal-subtitle">Karakteristik Rasa</h6>
+            <ul class="custom-modal-list">
+              <li>Keseimbangan antara manis dan asam</li>
+              <li>Body medium</li>
+              <li>Aroma karamel yang khas</li>
+            </ul>
+            <div class="custom-modal-tag">
+              Cocok untuk: Espresso maupun manual brew
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL: FERMENTASI -->
+    <div
+      class="modal fade custom-process-modal"
+      id="modalFermentasi"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="d-flex align-items-center gap-3">
+              <div class="custom-process-icon custom-modal-icon">4</div>
+              <h5 class="modal-title">Fermentasi</h5>
+            </div>
+            <button
+              type="button"
+              class="btn-close custom-btn-close-process"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="custom-modal-desc">
+              Biji kopi direndam dalam wadah tertutup dalam kondisi terkontrol
+              selama beberapa jam hingga hari, memungkinkan mikroba secara alami
+              memecah gula dan membentuk senyawa rasa baru sebelum biji
+              dikeringkan.
+            </p>
+            <h6 class="custom-modal-subtitle">Karakteristik Rasa</h6>
+            <ul class="custom-modal-list">
+              <li>Profil rasa lebih kompleks</li>
+              <li>Notes unik (fruity/winey)</li>
+              <li>Karakter rasa yang lebih intens</li>
+            </ul>
+            <div class="custom-modal-tag">
+              Cocok untuk: Kopi specialty & eksplorasi rasa
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="custom-footer">
+      <div class="container">
+        <div class="text-center mb-4">
+          <p class="custom-footer-tagline" data-animate="fade-up">
+            Authentic Coffee from the <br class="d-none d-sm-block" />
+            Bulukumba Highlands
+          </p>
+        </div>
+
+        <ul
+          class="custom-footer-nav list-unstyled d-flex flex-wrap justify-content-center align-items-center mb-4"
+          data-animate="fade-up"
+          data-delay="100"
+        >
+          <li><a href="#beranda">Beranda</a></li>
+          <li class="custom-footer-dot">&bull;</li>
+          <li><a href="#tentang">Tentang</a></li>
+          <li class="custom-footer-dot">&bull;</li>
+          <li><a href="#produk">Produk</a></li>
+          <li class="custom-footer-dot">&bull;</li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+
+        <!-- Dua kontak tambahan, gak mengubah desain awal -->
+        <div
+          class="custom-footer-contact mb-4"
+          data-animate="fade-up"
+          data-delay="200"
+        >
+          <a
+            href="https://wa.me/6282133355755"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="custom-footer-contact-item"
+          >
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>0821 3335 5755</span>
+          </a>
+          <a
+            href="https://maps.app.goo.gl/Fa4n9BBnKDVmj2fh8"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="custom-footer-contact-item"
+          >
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Perumahan Masagena, Kota Bulukumba</span>
+          </a>
+        </div>
+
+        <hr class="custom-footer-divider" />
+
+        <p class="custom-footer-copy text-center mb-0">
+          &copy; 2026 BUMBA BEANS. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

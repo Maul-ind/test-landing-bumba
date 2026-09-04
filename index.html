@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bumba Beans</title>
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/img/logo.png" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg shadow-sm fixed-top custom-navbar">
+      <div class="container custom-navbar-container">
+        <a class="navbar-brand custom-navbar-brand" href="#"
+          ><img src="./assets/img/logo.png" alt="" /><span>
+            Bumba Beans</span
+          ></a
+        >
+
+        <!-- link biasa, cuma tampil di desktop (lg ke atas) -->
+        <ul
+          class="navbar-nav d-none d-md-flex flex-row align-items-center gap-4 ms-auto me-4"
+        >
+          <li class="nav-item">
+            <a class="nav-link custom-nav-link" href="#beranda">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-nav-link" href="#produk">Produk</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-nav-link" href="#tentang">Tentang</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-nav-link" href="#kontak">Kontak</a>
+          </li>
+        </ul>
+
+        <!-- tombol pesan tetap kelihatan di desktop -->
+        <!-- <a
+          href="https://wa.me/6282133355755"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="custom-nav-btn d-none d-md-inline-block"
+        >
+          <i class="fa-brands fa-whatsapp"></i>
+          Pesan Sekarang
+        </a> -->
+
+        <!-- toggle buka offcanvas, muncul cuma di layar kecil (mobile) -->
+        <button
+          class="custom-toggle-btn d-md-none ms-auto"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#sidebarMenu"
+        >
+          &#9776;
+        </button>
+      </div>
+    </nav>
+
+    <!-- OFFCANVAS dari kanan -->
+    <div
+      class="offcanvas offcanvas-end custom-offcanvas"
+      tabindex="-1"
+      id="sidebarMenu"
+    >
+      <div class="offcanvas-header custom-offcanvas-header justify-content-end">
+        <button class="custom-close-btn" data-bs-dismiss="offcanvas">
+          &times;
+        </button>
+      </div>
+      <div class="offcanvas-body custom-offcanvas-body">
+        <a class="nav-link custom-offcanvas-link" href="#beranda">Beranda</a>
+        <a class="nav-link custom-offcanvas-link" href="#produk">Produk</a>
+        <a class="nav-link custom-offcanvas-link" href="#tentang">Tentang</a>
+        <a class="nav-link custom-offcanvas-link" href="#kontak">Kontak</a>
+        <!-- <a
+          href="https://wa.me/6282133355755"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="custom-nav-btn d-md-inline-block"
+        >
+          <i class="fa-brands fa-whatsapp"></i>
+          Pesan Sekarang
+        </a> -->
+      </div>
+    </div>
+
+    <main class="pb-4">
+      <!-- Hero/Banner Section -->
+      <section class="section-hero-section" id="beranda">
+        <div class="container-fluid px-0">
+          <div class="row g-0">
+            <div
+              class="col-12 position-relative d-flex justify-content-center align-items-center flex-column"
+            >
+              <div
+                class="custom-hero-img-wrapper d-flex flex-column align-items-center justify-content-center"
+                data-animate="fade-up"
+              >
+                <img
+                  src="./assets/img/hero-beans.png"
+                  alt="Bawakaraeng Coffee"
+                  class="custom-hero-img"
+                />
+                <div class="custom-hero-shadow"></div>
+              </div>
+              <div
+                class="col-11 col-sm-10 col-md-8 col-lg-12 custom-hero-card text-center"
+                data-animate="fade-up"
+              >
+                <span class="custom-hero-label d-block"
+                  >The Soul of Sulawesi:</span
+                >
+                <h1 class="custom-hero-title">Bawakaraeng Coffee</h1>
+                <p class="custom-hero-desc mb-4">
+                  Grown in the misty highlands, roasted for the discerning
+                  palate.
+                  <br />
+                  Experience the rich, earthy notes of our heritage beans.
+                </p>
+                <div
+                  class="d-flex flex-column flex-sm-row justify-content-center gap-2"
+                >
+                  <a
+                    href="#produk"
+                    class="custom-btn-product btn-hero-fill text-center"
+                  >
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    Lihat Produk
+                  </a>
+                  <a
+                    href="https://wa.me/6282133355755"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="custom-btn-outline btn-hero-outline text-center"
+                  >
+                    <i class="fa-brands fa-whatsapp"></i>
+                    Pesan via WhatsApp
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hero/Banner Section -->
+
+      <!-- Our Procduct -->
+      <section class="section-our-product" id="produk">
+        <div class="container">
+          <!-- Baris buat Judul -->
+          <div class="row justify-content-center">
+            <div
+              class="col-12 text-center custom-header-our-product mb-3"
+              data-animate="fade-up"
+            >
+              <span>Our Product</span>
+              <h2>Kopi Pilihan Dari <br />Bawakaraeng</h2>
+            </div>
+          </div>
+
+          <!-- Baris Card produk -->
+          <div class="row justify-content-center g-2">
+            <div
+              class="col-12 col-sm-6 col-lg-4"
+              data-animate="fade-up"
+              data-delay="0"
+            >
+              <div class="card h-100 custom-card-product">
+                <img
+                  src="./assets/img/arabica-mini-2.png"
+                  alt="Biji Kopi Arabica"
+                  class="card-img-top"
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title">Arabica</h5>
+                  <span class="card-text"> Manis, Asam | Sweet, Acidic </span>
+
+                  <a
+                    href="./detail-arabica.html"
+                    class="custom-btn-product w-100 mt-2"
+                  >
+                    Selengkapnya
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-sm-6 col-lg-4"
+              data-animate="fade-up"
+              data-delay="100"
+            >
+              <div class="card h-100 custom-card-product">
+                <img
+                  src="./assets/img/robusta-mini-2.png"
+                  alt="Biji Kopi Robusta"
+                  class="card-img-top"
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title">Robusta</h5>
+                  <span class="card-text"> Bold | Pekat </span>
+
+                  <a
+                    href="./detail-robusta.html"
+                    class="custom-btn-product w-100 mt-2"
+                  >
+                    Selengkapnya
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-sm-6 col-lg-4"
+              data-animate="fade-up"
+              data-delay="200"
+            >
+              <div class="card h-100 custom-card-product">
+                <img
+                  src="./assets/img/liberica-mini-2.png"
+                  alt="Biji Kopi Liberica"
+                  class="card-img-top"
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title">Liberica</h5>
+                  <span class="card-text">
+                    Unique, Tart-Sweet | Unik, Sepet-Manis
+                  </span>
+                  <a
+                    href="./detail-liberica.html"
+                    class="custom-btn-product w-100 mt-2"
+                  >
+                    Selengkapnya
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Our Procduct -->
+
+      <!-- About us -->
+      <section class="section-about-us" id="tentang">
+        <div class="container">
+          <!-- Heading tetap full width & center -->
+          <div
+            class="custom-header-about-us row mb-3 text-center justify-content-center"
+            data-animate="fade-up"
+          >
+            <span>About Us</span>
+            <h2 class="text-center">
+              Dari Tanah Bawakaraeng, Untuk Pecinta Kopi
+            </h2>
+          </div>
+
+          <!-- Baru: row 2 kolom -->
+          <div class="row align-items-center gy-4">
+            <!-- Kolom gambar -->
+            <div class="col-12 col-lg-6" data-animate="slide-left">
+              <img
+                src="./assets/img/about-2.jpeg"
+                alt="Petani Kopi Bumba Beans"
+                class="custom-about-img img-fluid rounded-5"
+              />
+            </div>
+
+            <!-- Kolom teks + tombol -->
+            <div
+              class="col-12 col-lg-6 text-center text-lg-start"
+              data-animate="slide-right"
+            >
+              <p class="custom-about-desc mb-4">
+                BUMBA BEANS hadir sebagai bentuk penghormatan terhadap kopi dan
+                para petani lokal. Setiap biji kami tumbuh di lereng pegunungan
+                dan dirawat dengan penuh perhatian, menghasilkan cita rasa khas
+                yang mencerminkan tanah asalnya.
+              </p>
+
+              <!-- Badge info singkat -->
+              <div class="row row-cols-1 row-cols-sm-2 g-3 mb-4">
+                <div class="col" data-animate="fade-up" data-delay="0">
+                  <div class="custom-about-badge">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <div>
+                      <span class="custom-about-badge-value">2019</span>
+                      <span class="custom-about-badge-label"
+                        >Tahun Berdiri</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col" data-animate="fade-up" data-delay="100">
+                  <div class="custom-about-badge">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                      <span class="custom-about-badge-value"
+                        >Bulukumba Barat</span
+                      >
+                      <span class="custom-about-badge-label">Asal Kopi</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col" data-animate="fade-up" data-delay="200">
+                  <div class="custom-about-badge">
+                    <i class="fa-solid fa-mountain"></i>
+                    <div>
+                      <span class="custom-about-badge-value"
+                        >1200–1600 mdpl</span
+                      >
+                      <span class="custom-about-badge-label"
+                        >Ketinggian Kebun</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col" data-animate="fade-up" data-delay="300">
+                  <div class="custom-about-badge">
+                    <i class="fa-solid fa-mug-hot"></i>
+                    <div>
+                      <span class="custom-about-badge-value">3 Varietas</span>
+                      <span class="custom-about-badge-label"
+                        >Arabica, Robusta, Liberica</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <a
+                href="./about.html"
+                class="custom-btn-product custom-btn-readmore w-100"
+              >
+                Selengkapnya
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About us -->
+
+      <!-- Contact Us -->
+      <section class="section-contact-us" id="kontak">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div
+              class="col-12 text-center custom-header-contact-us mb-4"
+              data-animate="fade-up"
+            >
+              <span>Contact US</span>
+              <h2>Hubungi Kami</h2>
+              <p class="custom-header-subtitle">
+                Punya Pertanyaan? Hubungi/Kunjungi Kami
+              </p>
+            </div>
+          </div>
+
+          <div class="row row-cols-1 row-cols-sm-2 g-3 mb-5">
+            <div class="col" data-animate="slide-left">
+              <a
+                href="https://wa.me/6282133355755"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-decoration-none"
+              >
+                <div class="custom-contact-badge">
+                  <i class="fa-brands fa-whatsapp"></i>
+
+                  <div>
+                    <span class="custom-contact-badge-value"> WhatsApp </span>
+                    <span class="custom-contact-badge-label">
+                      0821 3335 5755
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col" data-animate="slide-right">
+              <a
+                href="https://maps.app.goo.gl/Fa4n9BBnKDVmj2fh8"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-decoration-none"
+              >
+                <div class="custom-contact-badge">
+                  <i class="fa-solid fa-location-dot"></i>
+
+                  <div>
+                    <span class="custom-contact-badge-value">
+                      Lokasi Toko
+                    </span>
+                    <span class="custom-contact-badge-label">
+                      Perumahan masegena kota bulukumba
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Peta Lokasi -->
+          <!-- <div class="row justify-content-center mt-4">
+            <div class="col-12" data-animate="zoom-in">
+              <div class="custom-map-wrapper">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2750.961728243365!2d120.19021177498479!3d-5.520461194459618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbc01afe5517701%3A0xe7ef71f9d347d3d4!2sPerumahan%20Pondok%20Masagena!5e1!3m2!1sen!2sid!4v1788139280935!5m2!1sen!2sid"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  title="Lokasi Bumba Beans"
+                ></iframe>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </section>
+      <!-- Contact Us -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="custom-footer">
+      <div class="container" data-animate="fade-up">
+        <div class="text-center mb-4">
+          <p class="custom-footer-tagline">
+            Authentic Coffee from the <br class="d-none d-sm-block" />
+            Bulukumba Highlands
+          </p>
+        </div>
+
+        <ul
+          class="custom-footer-nav list-unstyled d-flex flex-wrap justify-content-center align-items-center mb-4"
+        >
+          <li><a href="#beranda">Beranda</a></li>
+          <li class="custom-footer-dot">&bull;</li>
+          <li><a href="#tentang">Tentang</a></li>
+          <li class="custom-footer-dot">&bull;</li>
+          <li><a href="#produk">Produk</a></li>
+          <li class="custom-footer-dot">&bull;</li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+
+        <div class="custom-footer-contact mb-4">
+          <a
+            href="https://wa.me/6282133355755"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="custom-footer-contact-item"
+          >
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>0821 3335 5755</span>
+          </a>
+
+          <a
+            href="https://maps.app.goo.gl/Fa4n9BBnKDVmj2fh8"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="custom-footer-contact-item"
+          >
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Perumahan Masagena, Kota Bulukumba</span>
+          </a>
+        </div>
+
+        <hr class="custom-footer-divider" />
+
+        <p class="custom-footer-copy text-center mb-0">
+          &copy; 2026 BUMBA BEANS. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

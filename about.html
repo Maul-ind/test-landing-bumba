@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bumba Beans</title>
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/img/logo.png" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg shadow-sm fixed-top custom-navbar">
+      <div class="container custom-navbar-container">
+        <a class="navbar-brand custom-navbar-brand" href="#"
+          ><img src="./assets/img/logo.png" alt="" /><span>
+            Bumba Beans</span
+          ></a
+        >
+
+        <!-- link biasa, cuma tampil di desktop (lg ke atas) -->
+        <ul
+          class="navbar-nav d-none d-md-flex flex-row align-items-center gap-4 ms-auto me-4"
+        >
+          <li class="nav-item">
+            <a class="nav-link custom-nav-link" href="./index.html#beranda"
+              >Beranda</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-nav-link" href="./index.html#produk"
+              >Produk</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link custom-nav-link active"
+              href="./index.html#tentang"
+              >Tentang</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-nav-link" href="./index.html#kontak"
+              >Kontak</a
+            >
+          </li>
+        </ul>
+
+        <!-- tombol pesan tetap kelihatan di desktop -->
+        <!-- <a
+          href="https://wa.me/6282133355755"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="custom-nav-btn d-none d-md-inline-block"
+        >
+          <i class="fa-brands fa-whatsapp"></i>
+          Pesan Sekarang
+        </a> -->
+
+        <!-- toggle buka offcanvas, muncul cuma di layar kecil (mobile) -->
+        <button
+          class="custom-toggle-btn d-md-none ms-auto"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#sidebarMenu"
+        >
+          &#9776;
+        </button>
+      </div>
+    </nav>
+
+    <!-- OFFCANVAS dari kanan -->
+    <div
+      class="offcanvas offcanvas-end custom-offcanvas"
+      tabindex="-1"
+      id="sidebarMenu"
+    >
+      <div class="offcanvas-header custom-offcanvas-header justify-content-end">
+        <button class="custom-close-btn" data-bs-dismiss="offcanvas">
+          &times;
+        </button>
+      </div>
+      <div class="offcanvas-body custom-offcanvas-body">
+        <a class="nav-link custom-offcanvas-link" href="./index.html#beranda"
+          >Beranda</a
+        >
+        <a class="nav-link custom-offcanvas-link" href="./index.html#produk"
+          >Produk</a
+        >
+        <a
+          class="nav-link custom-offcanvas-link active"
+          href="./index.html#tentang"
+          >Tentang</a
+        >
+        <a class="nav-link custom-offcanvas-link" href="./index.html#kontak"
+          >Kontak</a
+        >
+        <!-- <a
+          href="https://wa.me/6282133355755"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="custom-nav-btn d-md-inline-block"
+        >
+          <i class="fa-brands fa-whatsapp"></i>
+          Pesan Sekarang
+        </a> -->
+      </div>
+    </div>
+
+    <main class="custom-page-wrapper">
+      <!-- Section 1: Cerita asal-usul -->
+      <section class="custom-page-section">
+        <div class="container">
+          <div class="text-center mb-4">
+            <span
+              class="custom-page-kicker"
+              data-animate="fade-up"
+              data-delay="0"
+              >About Us</span
+            >
+            <h1
+              class="custom-page-title"
+              data-animate="fade-up"
+              data-delay="200"
+            >
+              Dari Tanah Bawakaraeng,<br />Untuk Pecinta Kopi
+            </h1>
+          </div>
+
+          <!--
+            Satu row berisi 3 blok: gambar, badge, paragraf.
+            Urutan diatur pakai class order-* (mobile) dan order-lg-* (desktop):
+            - Mobile : gambar -> badge -> paragraf
+            - Desktop: gambar sejajar paragraf, badge di bawah keduanya (full width)
+          -->
+          <div class="row align-items-center gy-4">
+            <!-- Gambar: selalu urutan pertama -->
+            <div class="col-12 col-lg-6 order-1">
+              <img
+                src="./assets/img/about-2.jpeg"
+                alt="Kebun Kopi Bawakaraeng"
+                class="custom-about-img-2 img-fluid rounded-5"
+                data-animate="slide-left"
+                data-delay="200"
+              />
+            </div>
+
+            <!-- Badge: urutan ke-2 di mobile, urutan ke-3 (bawah) di desktop -->
+            <div class="col-12 order-2 order-lg-3">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3">
+                <div class="col" data-animate="fade-up" data-delay="50">
+                  <div class="custom-about-badge">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <div>
+                      <span class="custom-about-badge-value">2019</span>
+                      <span class="custom-about-badge-label"
+                        >Tahun Berdiri</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col" data-animate="fade-up" data-delay="80">
+                  <div class="custom-about-badge">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                      <span class="custom-about-badge-value"
+                        >Bulukumba Barat</span
+                      >
+                      <span class="custom-about-badge-label">Asal Kopi</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col" data-animate="fade-up" data-delay="110">
+                  <div class="custom-about-badge">
+                    <i class="fa-solid fa-mountain"></i>
+                    <div>
+                      <span class="custom-about-badge-value"
+                        >1200–1600 mdpl</span
+                      >
+                      <span class="custom-about-badge-label"
+                        >Ketinggian Kebun</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col" data-animate="fade-up" data-delay="140">
+                  <div class="custom-about-badge">
+                    <i class="fa-solid fa-mug-hot"></i>
+                    <div>
+                      <span class="custom-about-badge-value">3 Varietas</span>
+                      <span class="custom-about-badge-label"
+                        >Arabica, Robusta, Liberica</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Paragraf: urutan ke-3 (paling bawah) di mobile, urutan ke-2 (sejajar gambar) di desktop -->
+            <div
+              class="col-12 col-lg-6 order-3 order-lg-2 text-center text-lg-start"
+              data-animate="slide-right"
+              data-delay="50"
+            >
+              <p class="custom-page-desc mx-auto mx-lg-0">
+                BUMBA BEANS lahir pada tahun 2019 sebagai bentuk penghargaan
+                terhadap kekayaan alam pegunungan dan para petani kopi di
+                kawasan Gunung Bawakaraeng, Sulawesi.
+              </p>
+              <p class="custom-page-desc mx-auto mx-lg-0 mb-0">
+                Kopi BUMBA BEANS tumbuh di tanah lereng gunung yang subur dengan
+                udara dataran tinggi yang sejuk. Biji kopi kami berasal dari
+                Bulukumba Barat, Sulawesi Selatan, dengan ketinggian sekitar
+                1200–1600 mdpl.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="custom-page-divider mx-auto my-3" />
+
+      <!-- Section 2: Proses pemetikan -->
+      <section class="custom-page-section">
+        <div class="container text-center">
+          <h2
+            class="custom-page-title custom-page-title-sm"
+            data-animate="fade-up"
+            data-delay="0"
+          >
+            Dijaga Dengan Ketelitian
+          </h2>
+
+          <div class="row align-items-center gy-1">
+            <!-- Gambar: urutan pertama di mobile, urutan ke-2 (kanan) di desktop -->
+            <div
+              class="col-12 col-lg-6 order-1 order-lg-2"
+              data-animate="slide-right"
+              data-delay="0"
+            >
+              <img
+                src="./assets/img/about-1.jpg"
+                alt="Proses Pemetikan Kopi"
+                class="custom-about-img-3 img-fluid"
+              />
+            </div>
+
+            <!-- Teks + Badge: satu kolom, sejajar gambar di desktop -->
+            <div class="col-12 col-lg-6 order-2 order-lg-1">
+              <div class="d-flex flex-column">
+                <!-- Badge: di atas saat mobile, di bawah saat desktop -->
+                <div class="order-1 order-lg-2">
+                  <div
+                    class="row row-cols-1 row-cols-sm-2 row-cols-lg-2 g-3 mb-3 mb-lg-0"
+                  >
+                    <div class="col" data-animate="fade-up" data-delay="100">
+                      <div class="custom-about-badge">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                        <div>
+                          <span class="custom-about-badge-value"
+                            >Quality Control</span
+                          >
+                          <span class="custom-about-badge-label"
+                            >Setiap Tahap Diperiksa</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col" data-animate="fade-up" data-delay="200">
+                      <div class="custom-about-badge">
+                        <i class="fa-solid fa-users"></i>
+                        <div>
+                          <span class="custom-about-badge-value"
+                            >Petani Lokal</span
+                          >
+                          <span class="custom-about-badge-label"
+                            >Sulawesi Selatan</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Paragraf: di bawah saat mobile, di atas saat desktop -->
+                <div
+                  class="order-2 order-lg-1"
+                  data-animate="slide-left"
+                  data-delay="0"
+                >
+                  <p class="custom-page-desc mx-auto">
+                    Kopi dipetik secara selektif oleh tangan petani lokal dengan
+                    penuh ketelitian untuk menjaga kualitas terbaik dari setiap
+                    biji ceri kopi. Proses dan pengolahan dilakukan dengan
+                    standar kualitas tinggi untuk hasil terbaik demi menjaga
+                    cita rasa hasil panen.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="custom-page-divider mx-auto" />
+
+      <!-- Section 3: Produk & metode proses -->
+      <section class="custom-page-section custom-page-section-bottom">
+        <div class="container text-center">
+          <h2
+            class="custom-page-title custom-page-title-sm"
+            data-animate="fade-up"
+            data-delay="0"
+          >
+            Kopi dari BUMBA BEANS
+          </h2>
+
+          <div class="row align-items-center gy-4">
+            <div class="col-12 col-lg-6">
+              <img
+                src="./assets/img/about-3.jpeg"
+                alt="Kebun Kopi Bawakaraeng"
+                class="custom-about-img-2 img-fluid rounded-5"
+                data-animate="slide-left"
+                data-delay="0"
+              />
+            </div>
+
+            <!-- WAJIB d-flex flex-column supaya order-* di anak-anaknya berfungsi -->
+            <div class="col-12 col-lg-6 d-flex flex-column">
+              <!-- Badge: di atas saat mobile (order-1), di bawah saat desktop (order-lg-2) -->
+              <div class="order-1 order-lg-2">
+                <div
+                  class="row row-cols-1 row-cols-sm-2 g-3 mb-3 mb-lg-0 mt-lg-3"
+                >
+                  <div class="col" data-animate="fade-up" data-delay="100">
+                    <div class="custom-about-badge">
+                      <i class="fa-solid fa-tag"></i>
+                      <div>
+                        <span class="custom-about-badge-value">3 Varietas</span>
+                        <span class="custom-about-badge-label"
+                          >Arabica, Robusta, Liberica</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col" data-animate="fade-up" data-delay="200">
+                    <div class="custom-about-badge">
+                      <i class="fa-solid fa-flask"></i>
+                      <div>
+                        <span class="custom-about-badge-value"
+                          >4 Metode Proses</span
+                        >
+                        <span class="custom-about-badge-label"
+                          >Natural, Washed, Honey, Fermentasi</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Paragraf: di bawah saat mobile (order-2), di atas saat desktop (order-lg-1) -->
+              <div
+                class="order-2 order-lg-1"
+                data-animate="slide-right"
+                data-delay="0"
+              >
+                <p class="custom-page-desc mx-auto mb-0">
+                  BUMBA BEANS menghadirkan tiga varietas kopi: Arabica, Robusta,
+                  dan Liberica, yang diproses dengan pilihan Natural, Washed,
+                  Honey Process, dan Fermentasi. Setiap biji kopi kami pilih
+                  dengan karakter rasa yang berbeda untuk memberikan pengalaman
+                  menikmati kopi yang beragam.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="custom-footer">
+      <div class="container">
+        <div class="text-center mb-4">
+          <p class="custom-footer-tagline" data-animate="fade-up">
+            Authentic Coffee from the <br class="d-none d-sm-block" />
+            Bulukumba Highlands
+          </p>
+        </div>
+
+        <ul
+          class="custom-footer-nav list-unstyled d-flex flex-wrap justify-content-center align-items-center mb-4"
+          data-animate="fade-up"
+          data-delay="100"
+        >
+          <li><a href="#beranda">Beranda</a></li>
+          <li class="custom-footer-dot">&bull;</li>
+          <li><a href="#tentang">Tentang</a></li>
+          <li class="custom-footer-dot">&bull;</li>
+          <li><a href="#produk">Produk</a></li>
+          <li class="custom-footer-dot">&bull;</li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+
+        <!-- Dua kontak tambahan, gak mengubah desain awal -->
+        <div
+          class="custom-footer-contact mb-4"
+          data-animate="fade-up"
+          data-delay="200"
+        >
+          <a
+            href="https://wa.me/6282133355755"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="custom-footer-contact-item"
+          >
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>0821 3335 5755</span>
+          </a>
+          <a
+            href="https://maps.app.goo.gl/Fa4n9BBnKDVmj2fh8"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="custom-footer-contact-item"
+          >
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Perumahan Masagena, Kota Bulukumba</span>
+          </a>
+        </div>
+
+        <hr class="custom-footer-divider" />
+
+        <p class="custom-footer-copy text-center mb-0">
+          &copy; 2026 BUMBA BEANS. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
