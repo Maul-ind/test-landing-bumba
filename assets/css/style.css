@@ -255,6 +255,7 @@ html {
   border: 1.5px solid transparent;
   transition: all 0.3s ease;
   -webkit-tap-highlight-color: transparent;
+  white-space: nowrap;
 }
 
 /* --- Varian solid hijau (navbar) --- */
@@ -362,12 +363,14 @@ html {
 
 .btn-hero-fill {
   text-align: center;
-  padding: 10px 60px;
+  padding: 10px 40px;
+  flex-shrink: 0;
 }
 
 .btn-hero-outline {
   text-align: center;
-  padding: 10px 30px;
+  padding: 10px 40px;
+  flex-shrink: 0;
 }
 
 .custom-hero-title {
