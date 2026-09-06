@@ -363,13 +363,13 @@ html {
 
 .btn-hero-fill {
   text-align: center;
-  padding: 10px 40px;
+  padding: 10px 50px;
   flex-shrink: 0;
 }
 
 .btn-hero-outline {
   text-align: center;
-  padding: 10px 40px;
+  padding: 10px 50px;
   flex-shrink: 0;
 }
 
