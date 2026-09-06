@@ -576,7 +576,7 @@ html {
 /* Gambar card sedikit lebih pendek di HP biar proporsional dengan lebar card */
 @media (max-width: 575.98px) {
   .custom-card-product img {
-    max-height: 220px;
+    max-height: 300px;
   }
 }
 
